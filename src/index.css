@@ -6,6 +6,13 @@
 
 @layer base {
   body {
-    @apply font-font_inner bg-general_bright_red text-neutral_light_white_bg;
+    @apply font-font_inner text-sm;
+  }
+  .darkModeToggle {
+    transition: 0.3s all ease;
+    @apply dark:bg-neutral_dark_very_dark_blue_top_bg_pattern dark:right-[3px] dark:left-6;
+  }
+  .profile-card {
+    @apply bg-neutral_light_light_grayish_blue_card_bg  lg:w-1/4 w-full md:w-[31%] sm:w-[46%] flex  flex-col items-center p-6 border-t-4 cursor-pointer hover:ease-linear duration-100 box-border  border-social_facebook rounded-md dark:bg-neutral_dark_desaturated_blue_card_bg;
   }
 }
