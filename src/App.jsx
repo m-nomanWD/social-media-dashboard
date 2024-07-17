@@ -33,7 +33,7 @@ function App() {
               <h1 className="md:text-4xl text-2xl  text-wrap font-bold ">Social Media Dashboard</h1>
               <h4 className="text-neutral_light_dark_grayish_blue_text font-semibold m-0 p-0 dark:text-neutral_dark_desaturated_blue_text ">Total Followers: 23,004</h4>
             </div>
-            <div className="flex items-center justify-center mt-4 w-fit bg-red-300">
+            <div className="flex items-center justify-center mt-4 w-fit">
               <span className="sm:mr-4 mr-2 dark:text-neutral_dark_desaturated_blue_text text-neutral_light_dark_grayish_blue_text font-semibold">Dark Mode</span>
               <div className="relative rounded-xl  bg-light_theme_toggle w-11 h-5 dark:bg-dark_theme_toggle">
                 <span onClick={() => {
