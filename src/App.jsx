@@ -3,6 +3,7 @@ import { useState } from "react"
 import { CardContainer, OverviewContainer } from './components'
 function App() {
   const [darkMode, isDarkMode] = useState(false)
+
   return (
     <>
       <main className={darkMode ? " text-white dark ease-linear min-h-svh dark:bg-neutral_dark_very_dark_blue_bg" : " text-neutral_light_very_dark_blue_text ease-linear duration-100"}>
@@ -10,9 +11,9 @@ function App() {
           <div className="flex flex-col sm:flex-row sm:justify-between items-baseline pt-8 sm:py-12 h-64 max-w-5xl mx-auto px-8">
             <div className="pb-4 sm:w-fit w-full border-b-[1px] sm:border-none border-b-text-neutral_light_dark_grayish_blue_text dark:border-neutral_dark_desaturated_blue_card_bg">
               <h1 className="md:text-4xl text-2xl  text-wrap font-bold ">Social Media Dashboard</h1>
-              <h4 className="text-neutral_light_dark_grayish_blue_text font-semibold dark:text-neutral_dark_desaturated_blue_text">Total Followers: 23,004</h4>
+              <h4 className="text-neutral_light_dark_grayish_blue_text font-semibold m-0 dark:text-neutral_dark_desaturated_blue_text ">Total Followers: 23,004</h4>
             </div>
-            <div className="flex items-center mt-4">
+            <div className="flex items-center justify-center mt-4">
               <span className="sm:mr-4 mr-2 dark:text-neutral_dark_desaturated_blue_text text-neutral_light_dark_grayish_blue_text font-semibold">Dark Mode</span>
               <div className="relative rounded-xl  bg-light_theme_toggle w-11 h-5 dark:bg-dark_theme_toggle">
                 <span onClick={() => {
