@@ -18,8 +18,8 @@ function App() {
 
     }
     else {
-      const { value } = JSON.parse(localStorage.getItem("darkMode"))
-      isDarkMode(value)
+      const con = JSON.parse(localStorage.getItem("darkMode"))
+      isDarkMode(con)
     }
 
   }, [darkMode])
